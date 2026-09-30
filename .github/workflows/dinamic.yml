@@ -27,7 +27,7 @@ jobs:
   build:
     needs: get-versions
     runs-on: macos-latest
-    if: github.repository == 'zx0r/macOS'
+    if: github.repository == 'aureasato-sudo/Download-macOS'
     strategy:
       matrix:
         macos_version: ${{fromJson(needs.get-versions.outputs.versions)}}
